@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Inicia sesión en CINACH.">
+  <title>Iniciar sesión | CINACH</title>
+  <link href="vendor/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="stylesheet" href="css/styles.css?v=cinach-v2">
+</head>
+<body data-pagina="login">
+  <nav class="navbar navbar-expand-lg navbar-dark cinach-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html"><img src="img/logo.png" alt="Logo de CINACH" class="brand-logo"> CINACH</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="cartelera.html">Cartelera</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#promociones">Tu cuenta</a></li>
+          <li class="nav-item d-flex flex-column flex-lg-row align-items-lg-center gap-2 ms-lg-2 mt-2 mt-lg-0" id="navAuth"></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="auth-section">
+    <div class="container">
+      <div class="auth-card">
+        <div class="text-center mb-4">
+          <img src="img/logo.png" alt="" class="auth-logo mb-2">
+          <p class="eyebrow mb-1">BIENVENIDO DE NUEVO</p>
+          <h1 class="auth-title">Iniciar sesión</h1>
+          <p class="muted small mb-0">Accede a tu cuenta de CINACH.</p>
+        </div>
+
+        <div id="mensajeFormulario" class="d-none" role="alert" aria-live="polite"></div>
+
+        <form id="formLogin" novalidate>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="correo" name="correo" autocomplete="email" placeholder="nombre@unach.mx">
+            <div class="invalid-feedback" id="error-correo"></div>
+          </div>
+          <div class="mb-4">
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="password" name="password" autocomplete="current-password">
+            <div class="invalid-feedback" id="error-password"></div>
+          </div>
+          <button type="submit" class="btn btn-cinach w-100">Entrar</button>
+        </form>
+
+        <p class="text-center small muted mt-4 mb-0">¿Aún no tienes cuenta? <a href="registro.html" class="link-cinach">Regístrate</a></p>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+      <div><span class="fw-bold">CINACH</span> <span class="footer-divider">|</span> Cine para la comunidad UNACH</div>
+      <div class="small">Proyecto académico · Universidad Autónoma de Chiapas</div>
+    </div>
+  </footer>
+
+  <script src="vendor/bootstrap.bundle.min.js"></script>
+  <script type="module" src="app.js?v=cinach-v2"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+PASS: application start, homepage, anonymous profile, protected admin/history/ticket/purchase endpoints, register/login validation, cross-origin mutation rejection. No database connection or live data changes.

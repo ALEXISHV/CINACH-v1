@@ -1,0 +1,1 @@
+PASS: carousel, homepage without posters, dashboard, CRUD editors/save, movie preselection, occupied seats, cart total, purchase payload, ticket history, mobile width, nonadmin guard. API responses mocked.

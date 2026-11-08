@@ -1,0 +1,4 @@
+PASS syntax: 00_Solo_Base_Nueva.sql
+PASS syntax: 01_Actualizar.sql
+PASS syntax: 02_Programacion_Inicial.sql
+PASS syntax: 03_Habilitar_Admin.sql

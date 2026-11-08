@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CINACH: cartelera de cine para la comunidad UNACH.">
+  <title>CINACH | Cine para la comunidad UNACH</title>
+  <link href="vendor/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="stylesheet" href="css/styles.css?v=cinach-v2-hero-fix-1105">
+</head>
+<body data-pagina="inicio">
+  <nav class="navbar navbar-expand-lg navbar-dark cinach-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html"><img src="img/logo.png" alt="Logo de CINACH" class="brand-logo"> CINACH</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="cartelera.html">Cartelera</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#promociones">Tu cuenta</a></li>
+          <li class="nav-item"><a class="nav-link" href="compra.html">Comprar boletos</a></li>
+          <li class="nav-item d-flex flex-column flex-lg-row align-items-lg-center gap-2 ms-lg-2 mt-2 mt-lg-0" id="navAuth"></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="home-stage container section-space" aria-label="Descubre CINACH">
+      <div class="feature-carousel" aria-roledescription="carrusel">
+       <article class="feature-slide" data-slide="0"><p class="eyebrow">CINACH / TUXTLA GUTIÉRREZ</p><h1>Una buena historia.<br><span>Tu mejor lugar.</span></h1><p>Elige la película, encuentra tu función y organiza tu próxima salida desde un solo lugar.</p><a class="btn btn-cinach btn-lg" href="cartelera.html">Explorar cartelera →</a><div class="feature-brand-mark" aria-hidden="true"><img src="img/logo.png" alt="" width="320" height="320"></div></article>
+       <article class="feature-slide" data-slide="1" hidden><p class="eyebrow">TU CIUDAD, TUS OPCIONES</p><h1>El cine,<br><span>más cerca de ti.</span></h1><p>Consulta sucursales de Cinépolis y Cinemex en Tuxtla Gutiérrez.</p><a class="btn btn-cinach btn-lg" href="compra.html">Elegir sucursal →</a><div class="film-orbit" aria-hidden="true">05<span>SUCURSALES</span></div></article>
+       <article class="feature-slide" data-slide="2" hidden><p class="eyebrow">TODO EN TU CUENTA</p><h1>Tu próxima salida.<br><span>Bien organizada.</span></h1><p>Selecciona tus asientos y conserva tus tickets en el historial de compras.</p><a class="btn btn-cinach btn-lg" href="mis-compras.html">Ver mis compras →</a><div class="film-orbit" aria-hidden="true">✓<span>TUS TICKETS</span></div></article>
+       <div class="carousel-controls"><button type="button" id="slidePrev" aria-label="Diapositiva anterior">←</button><span id="slideStatus" aria-live="polite">01 / 03</span><button type="button" id="slideNext" aria-label="Diapositiva siguiente">→</button><button type="button" id="slideToggle" aria-label="Pausar carrusel" title="Pausar carrusel">Ⅱ</button></div>
+      </div>
+      <div class="home-benefits"><div><b>01 / Explora</b><p>Encuentra una historia para ti.</p></div><div><b>02 / Elige</b><p>Sucursal, horario y tus asientos.</p></div><div><b>03 / Conserva</b><p>Tu ticket, siempre a la mano.</p></div></div>
+    </section>
+    <section class="promotion-section section-space" id="promociones">
+      <div class="container">
+        <div class="promotion-card">
+          <div>
+            <p class="eyebrow">TU CUENTA CINACH</p>
+            <h2>Tus planes de cine,<br>en un solo lugar.</h2>
+            <p class="mb-0">Explora películas, elige una función y consulta tus tickets desde tu cuenta.</p>
+          </div>
+          <div class="promotion-side">
+            <div class="promotion-icon">✦</div>
+            <p class="fw-semibold mb-1">Estudiantes y docentes</p>
+            <p class="small mb-0">Registra tu cuenta para organizar tus compras y recuperar tus tickets.</p>
+            <div class="d-flex flex-wrap gap-2 mt-3">
+              <a href="registro.html" class="btn btn-cinach">Crear cuenta</a>
+              <button class="btn btn-light" onclick="location.href='compra.html'">Comprar boletos</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space location-section">
+      <div class="container d-md-flex justify-content-between align-items-center gap-4">
+        <div>
+          <p class="eyebrow">PLANEA TU SALIDA</p>
+          <h2>Elige tu próxima función</h2>
+          <p class="muted mb-md-0">Selecciona una cadena de cine, consulta funciones y genera tu ticket.</p>
+        </div>
+        <a href="cartelera.html" class="btn btn-cinach">Consultar cartelera</a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+      <div><span class="fw-bold">CINACH</span> <span class="footer-divider">|</span> Cine para la comunidad UNACH</div>
+      <div class="small">CINACH · Comunidad UNACH</div>
+    </div>
+  </footer>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="cinachToast" class="toast text-bg-dark border-0" role="status" aria-live="polite" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body" id="toastMensaje">CINACH</div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Cerrar"></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="vendor/bootstrap.bundle.min.js"></script>
+  <script type="module" src="app.js?v=cinach-v2-hero-fix-1105"></script>
+</body>
+</html>
